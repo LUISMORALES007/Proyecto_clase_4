@@ -68,9 +68,9 @@ public class Main {
                               
                      case 4 :
                        
-                       System.out.println("Ejercio4"); 
                        
                        
+                       ejercicio4();
                        
                        
                        
@@ -185,10 +185,40 @@ public class Main {
            
 
 }  
-     
+    
+           
+    @SuppressWarnings("empty-statement")
        public static void ejercicio4(){
 
            
+           System.out.println("Ejercio4"); 
+           
+           int a= 10;
+           int b=7;
+           int c= 4;
+           float resultado ;
+           System.out.println("Los coeficientes son los siguientes:");
+           System.out.println("a = "+a);
+           System.out.println("b=" +b);
+           System.out.println("c=" +c);
+           System.out.println("");
+           System.out.println("----------------------------------");
+           resultado = (float) (Math.pow(b,2)-4*a*c);;
+           
+               if(a!=0){
+              
+                if(resultado<0){
+                System.out.println("Se realizo la operacion y tiene raices imginarias");
+          }else{
+          double x1=(-b+Math.sqrt(resultado))/(2*a);
+          double x2=(-b-Math.sqrt(resultado))/(2*a);
+          System.out.println("El resultado de la operacion fue X1 = "+x1+" X2 = "+x2);
+        }
+      }else{
+      System.out.println("El coeficiente cuadratico debe ser diferente de 0");
+      } 
+           
+         
            
            
            
